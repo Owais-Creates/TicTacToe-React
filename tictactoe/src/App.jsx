@@ -1,10 +1,10 @@
 import React from 'react'
-import Card from './components/Card/Card'
+import Grid from './components/Grid/Grid'
 
 const App = () => {
   return (
     <>
-    <Card player="O"/>
+    <Grid numberOfCards={9}/>
     </>
   )
 }

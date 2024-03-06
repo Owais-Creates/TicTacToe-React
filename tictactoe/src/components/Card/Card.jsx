@@ -2,7 +2,8 @@ import React from 'react'
 import Icon from '../Icon/Icon'
 import './Card.css'
 
-const Card = ({ player }) => {
+
+const Card = ({ player , onPlay , index }) => {
 
     let icon = <Icon />
 
@@ -13,11 +14,10 @@ const Card = ({ player }) => {
     }
 
     return (
-        <div className='card'>
+        <div className='card' onClick={()=>onPlay(index)}>
             {icon}
         </div>
     )
-
 
 }
 
